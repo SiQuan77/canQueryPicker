@@ -34,6 +34,9 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    onPopClose(){
+      this.setData({show:false})
+    },
     showPopup() {
       this.setData({ 
         valueInSearch:"",
@@ -51,6 +54,9 @@ Component({
       }else{
         this.setData({columnsForSelect:this.data["pickerColumns"]})
       }
+    },
+    onCancel(){
+      this.setData({show:false})
     },
     onConfirm(event) {
       const { picker, value, index } = event.detail;

@@ -1,3 +1,6 @@
 <van-toast id="van-toast" />
 <canQueryPicker pickerTitle="实体名称" pickerColumns="{{columns}}"
  keyValue="resultOfColumns" bind:getSelectedValue="getSelectedValue"></canQueryPicker>
+
+ <canQueryPicker pickerTitle="欧美国家" pickerColumns="{{columns2}}"
+ keyValue="resultOfColumns2" bind:getSelectedValue="getSelectedValue"></canQueryPicker>

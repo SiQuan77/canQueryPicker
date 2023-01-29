@@ -4,9 +4,7 @@ value="{{seletedValueForShowing}}"
 is-link  
 bind:click="showPopup"/>
 
-<van-popup show="{{ show }}" position="bottom" custom-style="height: 70%;">
+<van-popup show="{{ show }}" position="bottom" custom-style="height: 70%;" bind:close="onPopClose">
     <van-search value="{{valueInSearch}}"  placeholder="请输入搜索关键词" bind:change="onSearchChange"/>
-<van-picker columns="{{ columnsForSelect }}" bind:change="onChange" 
-bind:cancel="onCancel"bind:confirm="onConfirm"show-toolbar="true"/>
-
+    <van-picker columns="{{ columnsForSelect }}" bind:change="onChange" bind:cancel="onCancel"bind:confirm="onConfirm"show-toolbar="true"/>
 </van-popup>
