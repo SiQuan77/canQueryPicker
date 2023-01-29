@@ -1,0 +1,2 @@
+# canQueryPicker
+基于VantApp制作的可以搜索的Picker，比较简陋，但是可以根据这个版本做改进
