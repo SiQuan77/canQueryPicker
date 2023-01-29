@@ -1,0 +1,3 @@
+<van-toast id="van-toast" />
+<canQueryPicker pickerTitle="实体名称" pickerColumns="{{columns}}"
+ keyValue="resultOfColumns" bind:getSelectedValue="getSelectedValue"></canQueryPicker>
